@@ -1,1 +1,122 @@
 <!DOCTYPE html>
+<style>
+    html {
+        font-size: 22px;
+        background-color: hsl(246, 76%, 170%);
+    }
+
+    #title {
+        font-weight: normal;
+        font-size: 35px;
+        padding: 10px 50px 10px 50px;
+        font-family: 'Serif', Verdana;
+        margin-top: 120px;
+        margin-bottom: 0px;
+    }
+
+    h2 {
+        font-weight: normal;
+        font-family: 'Serif', Verdana;
+        margin-bottom: 40px;
+        font-size: 20px;
+    }
+
+    h3 {
+        margin-top: 80px;
+        margin-bottom: 50px;
+        font-weight: normal;
+        font-family: 'Serif', Verdana;
+    }
+
+    #main {
+        margin: 30px 20px;
+        padding: 15px;
+        border-radius: 5px;
+        background: #F6EFF2;
+        line-height: 25px;
+        color: #333;
+        font-family: "Gill Sans", sans-serif;
+    }
+
+    #paragraphs {
+        margin: 30px 50px;
+    }
+
+    #footnotes{
+        margin: 30px 50px;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    blockquote {
+        font-style: italic;
+        max-width: 545px;
+        margin: 0 auto 50px auto;
+        text-align: left;
+    }
+
+    img {
+        max-width: 100%;
+        display: block;
+        height: auto;
+        margin: 0 auto 40px auto;
+        border: 15px solid white;
+    }
+
+    
+    #img-caption {
+        margin: 20px 0 5px 0;
+        color: #7E7C7C;
+    }
+
+    footer {
+        display: flex;
+        background: #F1E8EC;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    a:visited {
+        color: #74638f;
+    }
+
+    a:hover {
+        color: #477ca7;
+    }
+
+
+</style>
+
+<main id='main'>
+    <div id='titles' class='center'>
+        <h1 id='title'>Ada Lovelace</h1>
+        <h2>The first computer programmer in the world</h2>
+    </div>
+    <div id='img-div'>
+        <figure>
+            <img id='img' class='center' src='https://gimg2.baidu.com/image_search/src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fq_70%2Cc_zoom%2Cw_640%2Fimages%2F20171212%2Ff9eb08a2dc6643f48f3c8730b0e343f6.jpeg&refer=http%3A%2F%2F5b0988e595225.cdn.sohucs.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1631171751&t=1be1b81b4a92b544ab3a3046bffc4faa' alt='Image of Ada Byron, Countess of Lovelace'>
+            <figurecaption id='img-caption'>Ada was the first to recognise that Babbage machine (the Analytical Engine) had applications beyond pure calculation, and to have published the first algorithm intended to be carried out by such a machine. As a result, she is often regarded as the first computer programmer.</figurecaption>
+        </figure>
+    </div>
+    <section id='tribute-info'>
+        <h3 class='center'>Here's a brief introduction of Ada:</h3>
+        <div id='paragraphs'>
+            <p>Ada was born in 1815. She's the only child of the brief and tempestuous marriage of the erratic poet George Gordon, Lord Byron, and his mathematics-loving wife Annabella Milbanke.</p>
+            <p>When she was a teenager, her mathematical talents led her to a long working relationship and friendship with fellow British mathematician Charles Babbage, who is known as "the father of computers". She was in particular interested in Babbage's work on the Analytical Engine. Lovelace first met him in June 1833, through their mutual friend, and her private tutor, Mary Somerville.</p>
+            <p>Between 1842 and 1843, Ada translated an article by Italian military engineer Luigi Menabrea on the calculating engine, supplementing it with an elaborate set of notes, simply called "Notes". Lovelace's notes are important in the early history of computers, containing what many consider to be the first computer program—that is, an algorithm designed to be carried out by a machine. </p>
+            <p>She also developed a vision of the capability of computers to go beyond mere calculating or number-crunching, while many others, including Babbage himself, focused only on those capabilities. Her mindset of "poetical science" led her to ask questions about the Analytical Engine (as shown in her notes) examining how individuals and society relate to technology as a collaborative tool.</p>
+            <p>Ada Lovelace died of cancer at 36, a few short years after the publication of “Sketch of the Analytical Engine, with Notes from the Translator”. The Analytical Engine remained a vision, until Lovelace’s notes became one of the critical documents to inspire Alan Turing’s work on the first modern computers in the 1940s.</p>
+        </div>
+        <blockquote>
+            <p class='center'>"...that Enchantress who has thrown her magical spell around the most abstract of Sciences and has grasped it with a force which few masculine intellects could have exerted over it."</p>
+            <cite class='right'>-- Charles Babbage</cite>
+        </blockquote>
+        <p id='footnotes'>Most of the page content is cited from the Wikipedia page of <a id='tribute-link' href='https://en.wikipedia.org/wiki/Ada_Lovelace' target='_blank'>Ada Lovelace</a>.</p>
+    </section>
+    <footer>
+        <p>Posted by: @Cute-as-cucumber</p>
+        <p>Contact info: 0935-12345678</p>
+    </footer>
+</main>
