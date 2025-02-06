@@ -1,0 +1,58 @@
+
+.rules-title {
+    text-align: center;
+    font-size: 36px;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+.rules-list {
+    max-width: 740px;
+    /*put the list in the center of the main content section horizontally*/
+    margin: auto;
+    padding: 10px;
+    font-size: 20px;
+    line-height: 1.8;
+    list-style-type: none;
+}
+
+.rules-list li::before {
+    content: "🚢 ";
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+.credits {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.credits h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.credit-links {
+    list-style: none;
+    padding: 0;
+}
+
+.credit-description {
+    font-size: 20px;
+}
+
+.credit-links li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.credit-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.2s ease-in-out;
+}
+
+.credit-links a:hover {
+    color: lightblue;
+}

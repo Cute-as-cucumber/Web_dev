@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Battleship Game Page</title>
+        <link rel = "stylesheet" href = "/css/shared.css">
+        <link rel = "stylesheet" href = "/game/game.css">
+    </head>
+    <body>
+        <div class = "container">
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <nav class = "navbar">
+                <div class = "navbar-header">
+                    <h2>Battleship</h2>
+                    <label for="nav-toggle" class="nav-toggle-label">☰</label>
+                </div>
+                <ul class = "nav-links">
+                    <li><a href = "/index.html" class="active">Home</a></li>
+                    <li><a href="/game/game.html">Game</a></li>
+                    <li><a href="/rules/rules.html">Rules</a></li>
+                    <li><a href="/scores/high_scores.html">High Scores</a></li>
+                </ul>
+            </nav>
+
+            <main class = "main-content">
+                <h1>Battleship Game</h1>
+                <div class = "board-container">
+                <!-- enemy board-->
+                    <div>
+                        <h2 class = "board-heading">Enemy Board</h2>
+                            <div class = "board enemy-board">
+                                <!-- Row 1 -->
+                                <div class="cell">X</div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell">✓</div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell">X</div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <!-- Row 2 -->
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell">X</div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell">✓</div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <!-- Row 3 -->
+                                <div class="cell">✓</div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell">X</div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell">✓</div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <!-- Row 4 -->
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell">X</div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell">✓</div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell">X</div>
+                                <!-- Row 5 -->
+                                <div class="cell"></div>
+                                <div class="cell">✓</div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell">X</div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell">✓</div>
+                                <div class="cell"></div>
+                                <!-- Row 6 -->
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell">X</div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell">✓</div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell">X</div>
+                                <!-- Row 7 -->
+                                <div class="cell">✓</div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell">X</div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell">✓</div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <!-- Row 8 -->
+                                <div class="cell"></div>
+                                <div class="cell">X</div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell">✓</div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell">X</div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <!-- Row 9 -->
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell">✓</div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell">X</div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell">✓</div>
+                                <div class="cell"></div>
+                                <!-- Row 10 -->
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell">X</div>
+                                <div class="cell"></div>
+                                <div class="cell">✓</div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                                <div class="cell">X</div>
+                                <div class="cell"></div>
+                                <div class="cell"></div>
+                            </div>
+                    </div>
+                    <!-- player board-->
+                    <div>
+                        <h2 class = "board-heading">Player Board</h2>
+                        <div class = "board player-board">
+                            <!-- Row 1 -->
+                            <div class="cell"></div>
+                            <div class="cell">✓</div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell">X</div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell">✓</div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <!-- Row 2 -->
+                            <div class="cell">X</div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell">✓</div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell">X</div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <!-- Row 3 -->
+                            <div class="cell"></div>
+                            <div class="cell">X</div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell">✓</div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell">X</div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <!-- Row 4 -->
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell">✓</div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell">X</div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell">✓</div>
+                            <div class="cell"></div>
+                            <!-- Row 5 -->
+                            <div class="cell">✓</div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell">X</div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell">✓</div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell">X</div>
+                            <!-- Row 6 -->
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell">X</div>
+                            <div class="cell"></div>
+                            <div class="cell">✓</div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell">X</div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <!-- Row 7 -->
+                            <div class="cell">X</div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell">✓</div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell">X</div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell">✓</div>
+                            <!-- Row 8 -->
+                            <div class="cell"></div>
+                            <div class="cell">✓</div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell">X</div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell">✓</div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <!-- Row 9 -->
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell">X</div>
+                            <div class="cell"></div>
+                            <div class="cell">✓</div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell">X</div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <!-- Row 10 -->
+                            <div class="cell"></div>
+                            <div class="cell">X</div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell">✓</div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                            <div class="cell">X</div>
+                            <div class="cell"></div>
+                            <div class="cell"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--end of two boards-->
+                <!--timer and button-->
+                <div class = "status-bar">
+                    <div class = "timer">Time: 2: 59</div>
+                    <button class = "restart-button">Restart</button>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
